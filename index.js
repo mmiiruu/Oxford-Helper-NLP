@@ -74,7 +74,9 @@ async function handleEvent(event) {
   }
   return Promise.resolve(null);
 }
-
+app.get("/", (req, res) => {
+  res.send("Hello, this is my LINE bot!");
+});
 // เริ่มเซิร์ฟเวอร์
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
