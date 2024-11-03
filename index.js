@@ -74,6 +74,7 @@ async function handleEvent(event) {
   }
   return Promise.resolve(null);
 }
+
 app.get("/", (req, res) => {
   res.send("Hello, this is my LINE bot!");
 });
