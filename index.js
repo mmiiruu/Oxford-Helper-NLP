@@ -57,7 +57,7 @@ async function handleEvent(event) {
   if (event.type === "message" && event.message.type === "text") {
     const userMessage = event.message.text;
 
-    const pdfText = await readPdf("data.pdf"); // เปลี่ยนเป็น path ที่ถูกต้อง
+    const pdfText = await readPdf("data.pdf");
 
     const aiResponse = await askAi(userMessage, pdfText);
 
